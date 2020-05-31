@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  background-color: rgb(226, 225, 225);
+  background-image: linear-gradient(to bottom, rgba(9, 62, 82, 0.86),rgba(6, 4, 2, 0.76)), url("https://images.unsplash.com/photo-1460601416989-a913740bdde9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #c7beb4;
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  background-color: rgb(152, 106, 66);
+  border: 10px solid rgb(152, 106, 66);
+  display:none; 
+}
+
+#game td {
+  background-color: #c1a67e;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  color: white;
+  font-size: 1.5em;
+}
+
+.fire {
+  background-color: rgb(255, 87, 21);
+}
+
+.water {
+ background-color: rgb(48, 92, 236);
+}
+
+.wind {
+ background-color: rgb(119, 91, 145);
+}
+
+.leaf {
+ background-color: rgb(11, 150, 11);
+}
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: solid 1px rgba(211, 211, 211, 0.363);
+  background-color: rgba(226, 225, 225, 0.26);
+  border-radius: 0%;
+}
+
+#column-top td:hover {
+  background-color: rgba(207, 194, 120, 0.699);
+}
+
+button {
+  margin-top: 30px;
+  height: 40px;
+  width: 100px;
+  background-color: rgba(146, 146, 146, 0.575);
+  border: none;
+  border-radius: 10px;
+  display:none;
+}
+
+button:hover {
+  background-color: rgb(146, 146, 146);
+  font-weight: bold;
+}
+
+#intro {
+  height: 80%;
+  width: 70%;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+}
+
+.message {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  line-height: 1;
+  padding: 10px;
+}
+
+.select-player {
+  display: flex;
+  height: 40%;
+}
+
+.select-player > div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.elements {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements div{
+  width:50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.selection {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

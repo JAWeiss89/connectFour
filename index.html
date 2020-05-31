@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  <link href="connect4.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7ef63b7e07.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Connect 4 - Elements Edition</h1>
+  </header>
+  <div class="container">
+
+    <div id="game">
+      <table id="board"></table>
+    </div>
+    <div>
+      <form>
+        <button>Start Over!</button>
+      </form>
+    </div>
+
+
+    <div id="intro">
+      <div class="message">
+        <p>
+        Align four of the same element tokens to win!
+        </p>
+        <p id="choose">Player 1, choose your element</p>
+
+      </div>
+      <div class="select-player">
+        <div class="player-1">Player 1</div>
+        <div class="player-2">Player 2</div>
+      </div>
+      <div class="elements">
+        <div id="fire" class="option fire"><i class='fas fa-fire'></i></div>
+        <div id="water" class="option water"><i class='fas fa-water'></i></div>
+        <div id="leaf" class="option leaf"><i class='fas fa-leaf'></i></div>
+        <div id="wind" class="option wind"><i class='fas fa-wind'></i></div>
+      </div>
+    </div>
+
+
+  </div>
+  
+
+
+  <script src="connect4.js"></script>
+
+</body>
+</html>
